@@ -1,6 +1,6 @@
 function compute() {
     p = document.getElementById("principal").value;
-     if(p==0){
+     if(p<=0){
     alert("enter a positive number for principal");
 }
     r = document.getElementById("rate").value;
