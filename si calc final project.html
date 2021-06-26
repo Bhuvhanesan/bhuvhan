@@ -1,0 +1,23 @@
+<html lang="en">
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Final Project SI calculator</title>
+    </head>
+    <body>
+        <main>
+            <h1><b>Simple Interest Calculator</b></h1>
+            Amount <input type="number" id="principal" required><br/>
+            Interest rate <input type="range" id="rangeInput" name="rangeInput" min="0" max="50" step="1" value="0"
+            oninput="rate.value = rangeInput.value" required>
+            <output id="rate" name="rate" for="rangeInput">0</output>%<br>
+            No of Years <input type="number" id="years" required><br>
+            <button onclick="compute()">Compute</button><br><br><br>
+            <span id="word"></span><abbr id="result"></abbr><br>
+            <span id="message"></span><abbr id="current"></abbr><br>
+        </main>
+        <footer>
+        &#169; This Calculator belongs to bhuvhanesan
+        </footer>
+    </body>
+</html>
