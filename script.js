@@ -1,5 +1,8 @@
 function compute() {
     p = document.getElementById("principal").value;
+     if(p==0){
+    alert("enter a positive number for principal");
+}
     r = document.getElementById("rate").value;
     t = document.getElementById("years").value;
     a = document.getElementById("result").value;
